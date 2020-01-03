@@ -12,7 +12,7 @@ void main()
     while(1)
     {
     GetLocalTime(&stime);
-    printf("%d:%d:%d",stime.wHour-12,stime.wMinute,stime.wSecond);
+    printf("%d:%d:%d %s",stime.wHour-12,stime.wMinute,stime.wSecond,stime.wHour>12?"PM":"AM");
     Sleep(1000);
     system("CLS");
 }
